@@ -50,10 +50,9 @@ class Song
   def self.new_from_filename(filename)
 
     row = filename
-
-      data = row.split(" - ")
-      artist_name = data[0]
-      song_name = data[1].gsub(".mp3", "")
+    data = row.split(" - ")
+    artist_name = data[0]
+    song_name = data[1].gsub(".mp3", "")
 
     song = self.new
     song.name = song_name
@@ -61,14 +60,10 @@ class Song
     song
 end
 
-
-
-
-
-  def self.create_from_filename(filename)
-    song = self.new_from_filename(filename)
-    song.save
-    song
+def self.create_from_filename(filename)
+  song = self.new_from_filename(filename)
+  song.save
+  song
   end
 
 
