@@ -29,9 +29,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    song = self.("")
-    song.name = name
-    song
+    self.all.find {|obj|obj.name == name}
   end
 
 
