@@ -17,6 +17,7 @@ class Song
   end
 
   def Song.new_by_name
+    song = Song.new_by_name("The Middle")
   end
 
 end
