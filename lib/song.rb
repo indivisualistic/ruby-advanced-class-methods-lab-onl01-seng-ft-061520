@@ -16,4 +16,7 @@ class Song
     return song
   end
 
+  def Song.new_by_name
+  end
+
 end
